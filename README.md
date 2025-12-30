@@ -25,13 +25,13 @@
 
 ##  Descripción
 
-**Sheinclon** es una plataforma de comercio electrónico Full-Stack diseñada para ofrecer una experiencia de usuario premium ("Efecto Wow"). Construida con las últimas tecnologías web, combina un frontend reactivo y animado con un backend robusto y eficiente.
+**Sheinclon** es una plataforma de comercio electrónico Full-Stack diseñada para ofrecer una experiencia de usuario premium. Construida con las últimas tecnologías web, combina un frontend reactivo y animado con un backend robusto y eficiente.
 
 El proyecto se centra en la estética, el rendimiento y la escalabilidad, migrando recientemente a una arquitectura SQL con **SQLite** y **TypeORM** para una mayor integridad de datos y facilidad de desarrollo local.
 
 ##  Características Principales
 
-###  Experiencia de Usuario (UX/UI) "Wow"
+###  Experiencia de Usuario (UX/UI) 
 
 - **Hero Section Inmersiva**: Banner de pantalla completa con animaciones de entrada cinematográficas.
 - **Diseño Premium**: Interfaz limpia, tipografía moderna y uso de espacio en blanco al estilo editorial.
