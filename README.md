@@ -23,15 +23,15 @@
 
 ---
 
-## 📋 Descripción
+##  Descripción
 
 **Sheinclon** es una plataforma de comercio electrónico Full-Stack diseñada para ofrecer una experiencia de usuario premium ("Efecto Wow"). Construida con las últimas tecnologías web, combina un frontend reactivo y animado con un backend robusto y eficiente.
 
 El proyecto se centra en la estética, el rendimiento y la escalabilidad, migrando recientemente a una arquitectura SQL con **SQLite** y **TypeORM** para una mayor integridad de datos y facilidad de desarrollo local.
 
-## ✨ Características Principales
+##  Características Principales
 
-### 🎨 Experiencia de Usuario (UX/UI) "Wow"
+###  Experiencia de Usuario (UX/UI) "Wow"
 
 - **Hero Section Inmersiva**: Banner de pantalla completa con animaciones de entrada cinematográficas.
 - **Diseño Premium**: Interfaz limpia, tipografía moderna y uso de espacio en blanco al estilo editorial.
@@ -41,7 +41,7 @@ El proyecto se centra en la estética, el rendimiento y la escalabilidad, migran
   - Animaciones fluidas para botones de acción.
 - **Carga de Imágenes Optimizada**: Implementación de técnica "Blur-up" (desenfoque progresivo) para transiciones de carga ultra suaves.
 
-### 🛒 Funcionalidad E-commerce
+###  Funcionalidad E-commerce
 
 - **Catálogo Dinámico**: Filtrado por categoría, precio, y búsqueda en tiempo real.
 - **Carrito de Compras**: Gestión de estado persistente, cálculos de subtotal y actualizaciones en vivo.
@@ -50,7 +50,7 @@ El proyecto se centra en la estética, el rendimiento y la escalabilidad, migran
 - **Sistema de Reseñas**: Calificaciones y comentarios de usuarios.
 - **Cupones de Descuento**: Lógica para aplicar códigos promocionales.
 
-### 🛠️ Arquitectura Técnica
+###  Arquitectura Técnica
 
 - **Backend Migrado**: Transición exitosa de MongoDB a **SQLite** usando **TypeORM** para un esquema relacional robusto.
 - **Typescript Full-Stack**: Tipado estático estricto en frontend y backend para mayor seguridad y mantenibilidad.
@@ -58,7 +58,7 @@ El proyecto se centra en la estética, el rendimiento y la escalabilidad, migran
 
 ---
 
-## 🏗️ Stack Tecnológico
+##  Stack Tecnológico
 
 ### Frontend
 
@@ -83,7 +83,7 @@ El proyecto se centra en la estética, el rendimiento y la escalabilidad, migran
 
 ---
 
-## 🚀 Instalación y Despliegue Local
+##  Instalación y Despliegue Local
 
 Sigue estos pasos para levantar el proyecto en tu máquina local.
 
@@ -138,7 +138,7 @@ npm run dev
 
 ---
 
-## 📂 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 Sheinclon/
@@ -163,7 +163,7 @@ Sheinclon/
 
 ---
 
-## 🤝 Contribución
+##  Contribución
 
 ¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar este proyecto:
 
@@ -175,7 +175,7 @@ Sheinclon/
 
 ---
 
-## 📄 Licencia
+##  Licencia
 
 Distribuido bajo la licencia MIT. Ver `LICENSE` para más información.
 
@@ -183,6 +183,6 @@ Distribuido bajo la licencia MIT. Ver `LICENSE` para más información.
 
 <div align="center">
 
-**Desarrollado con ❤️ por [Bryan Montes](https://github.com/bmontes93)**
+**Desarrollado  por [Bryan Montes](https://github.com/bmontes93)**
 
 </div>
