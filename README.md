@@ -1,4 +1,4 @@
-# 🛍️ SHEIN Clone (Sheinclon)
+#  SHEIN Clone (Sheinclon)
 
 <div align="center">
 
