@@ -5,7 +5,7 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)
 ![React](https://img.shields.io/badge/React-19-blue.svg)
-![MongoDB](https://img.shields.io/badge/MongoDB-8.0+-green.svg)
+![SQLite](https://img.shields.io/badge/SQLite-TypeORM-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Status](https://img.shields.io/badge/status-production--ready-success.svg)
 
@@ -49,7 +49,7 @@ graph TB
     C --> E[Product Service]
     C --> F[Cart Service]
     C --> G[Coupon Service]
-    D --> H[MongoDB Database]
+    D --> H[SQLite Database]
     E --> H
     F --> H
     G --> H
@@ -104,8 +104,8 @@ graph TB
 {
   "Node.js": "18+",
   "Express.js": "5.1.0",
-  "MongoDB": "8.0+",
-  "Mongoose": "8.18.0",
+  "Database": "SQLite (Dev) / Postgres (Prod)",
+  "ORM": "TypeORM 0.3.x",
   "JWT": "jsonwebtoken",
   "bcrypt": "bcryptjs",
   "CORS": "2.8.5"
@@ -180,8 +180,8 @@ graph TB
 
 - **Node.js** - Runtime de JavaScript
 - **Express.js** - Framework web minimalista
-- **MongoDB** - Base de datos NoSQL
-- **Mongoose** - ODM para MongoDB
+- **SQLite** - Base de datos SQL ligera y rápida
+- **TypeORM** - ORM potente para TypeScript/JavaScript
 - **JWT** - Autenticación segura
 - **bcrypt** - Hashing de contraseñas
 - **CORS** - Control de acceso cross-origin
@@ -232,7 +232,7 @@ graph TB
 ### Prerrequisitos
 
 - Node.js (v18 o superior)
-- MongoDB (local o Atlas)
+- SQLite (Incuido en el proyecto)
 - npm o yarn
 
 ### Backend Setup
@@ -263,7 +263,8 @@ npm run dev   # Iniciar aplicación
 ```env
 PORT=5000
 NODE_ENV=development
-MONGO_URI=mongodb://localhost:27017/shein-clone
+DB_TYPE=sqlite
+DB_DATABASE=database.sqlite
 JWT_SECRET=tu_jwt_secret_seguro
 JWT_EXPIRE=30d
 FRONTEND_URL=http://localhost:3000
@@ -436,7 +437,8 @@ Permiso para usar, copiar, modificar y distribuir este software...
 
 - **[React 19](https://reactjs.org/)** - Framework web moderno
 - **[Express.js](https://expressjs.com/)** - Framework backend minimalista
-- **[MongoDB](https://www.mongodb.com/)** - Base de datos NoSQL flexible
+- **[TypeORM](https://typeorm.io/)** - ORM TypeScript
+- **[SQLite](https://www.sqlite.org/index.html)** - Base de datos SQL
 - **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utilitario
 - **[Vite](https://vitejs.dev/)** - Build tool ultrarrápido
 
