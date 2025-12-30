@@ -1,0 +1,23 @@
+H:\UNASAM\Sheinclon-master\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/authController.ts(9,13): error TS2339: Property 'user' does not exist on type '{ _id: string; name: string; email: string; role: string; token: string; }'.
+src/controllers/authController.ts(46,13): error TS2339: Property 'user' does not exist on type '{ _id: string; name: string; email: string; role: string; token: string; }'.
+src/controllers/authController.ts(46,64): error TS2554: Expected 1 arguments, but got 2.
+src/controllers/authController.ts(103,32): error TS2339: Property 'avatar' does not exist on type '{ _id: string; name: string; email: string; role: string; token: string; }'.
+src/controllers/authController.ts(104,31): error TS2339: Property 'phone' does not exist on type '{ _id: string; name: string; email: string; role: string; token: string; }'.
+src/controllers/authController.ts(105,33): error TS2339: Property 'address' does not exist on type '{ _id: string; name: string; email: string; role: string; token: string; }'.
+
+    at createTSError (H:\UNASAM\Sheinclon-master\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (H:\UNASAM\Sheinclon-master\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (H:\UNASAM\Sheinclon-master\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (H:\UNASAM\Sheinclon-master\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (H:\UNASAM\Sheinclon-master\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (H:\UNASAM\Sheinclon-master\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) {
+  diagnosticCodes: [ 2339, 2339, 2554, 2339, 2339, 2339 ]
+}

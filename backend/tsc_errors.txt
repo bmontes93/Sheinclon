@@ -1,0 +1,6 @@
+src/controllers/authController.ts(9,13): error TS2339: Property 'user' does not exist on type '{ _id: string; name: string; email: string; role: string; token: string; }'.
+src/controllers/authController.ts(46,13): error TS2339: Property 'user' does not exist on type '{ _id: string; name: string; email: string; role: string; token: string; }'.
+src/controllers/authController.ts(46,64): error TS2554: Expected 1 arguments, but got 2.
+src/controllers/authController.ts(103,32): error TS2339: Property 'avatar' does not exist on type '{ _id: string; name: string; email: string; role: string; token: string; }'.
+src/controllers/authController.ts(104,31): error TS2339: Property 'phone' does not exist on type '{ _id: string; name: string; email: string; role: string; token: string; }'.
+src/controllers/authController.ts(105,33): error TS2339: Property 'address' does not exist on type '{ _id: string; name: string; email: string; role: string; token: string; }'.

@@ -1,0 +1,18 @@
+H:\UNASAM\Sheinclon-master\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/middleware/authMiddleware.ts(35,31): error TS2551: Property 'findById' does not exist on type 'typeof User'. Did you mean 'findByIds'?
+
+    at createTSError (H:\UNASAM\Sheinclon-master\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (H:\UNASAM\Sheinclon-master\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (H:\UNASAM\Sheinclon-master\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (H:\UNASAM\Sheinclon-master\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (H:\UNASAM\Sheinclon-master\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (H:\UNASAM\Sheinclon-master\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) {
+  diagnosticCodes: [ 2551 ]
+}
