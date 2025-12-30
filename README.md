@@ -1,509 +1,188 @@
-# 🛍️ SHEIN Clone - E-commerce Full-Stack
+# 🛍️ SHEIN Clone (Sheinclon)
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)
-![React](https://img.shields.io/badge/React-19-blue.svg)
-![SQLite](https://img.shields.io/badge/SQLite-TypeORM-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Status](https://img.shields.io/badge/status-production--ready-success.svg)
+![Project Banner](https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop)
 
-**Un e-commerce completo y escalable construido con tecnologías modernas**
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+![TypeORM](https://img.shields.io/badge/TypeORM-FE0C05?style=for-the-badge&logo=typeorm&logoColor=white)
 
-[🚀 Demo en Vivo](#) • [📖 Documentación](#) • [🐛 Reportar Issues](https://github.com/bmontes93/shein-clone/issues)
+<br/>
+
+**Una experiencia de e-commerce moderna, rápida y visualmente impactante.**
+
+[🚀 Demo](#) • [📖 Documentación](#) • [🐛 Reportar Bug](https://github.com/bmontes93/shein-clone/issues)
 
 </div>
 
 ---
 
-## 📋 Tabla de Contenidos
+## 📋 Descripción
 
-- [✨ Características](#-características)
-- [🏗️ Arquitectura](#️-arquitectura)
-- [🛠️ Stack Tecnológico](#️-stack-tecnológico)
-- [🚀 Inicio Rápido](#-inicio-rápido)
-- [📁 Estructura del Proyecto](#-estructura-del-proyecto)
-- [🔧 Configuración](#-configuración)
-- [📡 API Reference](#-api-reference)
-- [🎨 UI/UX Features](#-uiux-features)
-- [🔒 Seguridad](#-seguridad)
-- [📊 Rendimiento](#-rendimiento)
-- [🧪 Testing](#-testing)
-- [🚀 Despliegue](#-despliegue)
-- [🔧 Scripts Disponibles](#-scripts-disponibles)
-- [🤝 Contribución](#-contribución)
-- [📝 Licencia](#-licencia)
-- [👨‍💻 Autor](#-autor)
-- [🙏 Agradecimientos](#-agradecimientos)
+**Sheinclon** es una plataforma de comercio electrónico Full-Stack diseñada para ofrecer una experiencia de usuario premium ("Efecto Wow"). Construida con las últimas tecnologías web, combina un frontend reactivo y animado con un backend robusto y eficiente.
 
----
+El proyecto se centra en la estética, el rendimiento y la escalabilidad, migrando recientemente a una arquitectura SQL con **SQLite** y **TypeORM** para una mayor integridad de datos y facilidad de desarrollo local.
 
-## 🏗️ Arquitectura
+## ✨ Características Principales
 
-```mermaid
-graph TB
-    A[Client - React 19] --> B[Vite Dev Server]
-    B --> C[API Gateway - Express.js]
-    C --> D[Authentication Service]
-    C --> E[Product Service]
-    C --> F[Cart Service]
-    C --> G[Coupon Service]
-    D --> H[SQLite Database]
-    E --> H
-    F --> H
-    G --> H
+### 🎨 Experiencia de Usuario (UX/UI) "Wow"
 
-    subgraph "Frontend Layer"
-        A
-        B
-    end
+- **Hero Section Inmersiva**: Banner de pantalla completa con animaciones de entrada cinematográficas.
+- **Diseño Premium**: Interfaz limpia, tipografía moderna y uso de espacio en blanco al estilo editorial.
+- **Tarjetas de Producto Interactivas**:
+  - Efecto **Zoom** suave al pasar el cursor.
+  - **Reveal Automático**: Muestra ángulos alternativos del producto en hover.
+  - Animaciones fluidas para botones de acción.
+- **Carga de Imágenes Optimizada**: Implementación de técnica "Blur-up" (desenfoque progresivo) para transiciones de carga ultra suaves.
 
-    subgraph "Backend Layer"
-        C
-        D
-        E
-        F
-        G
-    end
+### 🛒 Funcionalidad E-commerce
 
-    subgraph "Data Layer"
-        H
-    end
-```
+- **Catálogo Dinámico**: Filtrado por categoría, precio, y búsqueda en tiempo real.
+- **Carrito de Compras**: Gestión de estado persistente, cálculos de subtotal y actualizaciones en vivo.
+- **Lista de Deseos (Wishlist)**: Guarda tus productos favoritos (requiere autenticación).
+- **Gestión de Inventario**: Soporte para variantes complejas (Tallas y Colores).
+- **Sistema de Reseñas**: Calificaciones y comentarios de usuarios.
+- **Cupones de Descuento**: Lógica para aplicar códigos promocionales.
 
-### 🏛️ **Patrones de Diseño Implementados**
+### 🛠️ Arquitectura Técnica
 
-- **MVC Architecture** - Separación clara de responsabilidades
-- **Repository Pattern** - Abstracción de la capa de datos
-- **Service Layer** - Lógica de negocio centralizada
-- **Middleware Pattern** - Procesamiento de requests/response
-- **Observer Pattern** - Gestión de estado reactiva
-- **Factory Pattern** - Creación de objetos complejos
+- **Backend Migrado**: Transición exitosa de MongoDB a **SQLite** usando **TypeORM** para un esquema relacional robusto.
+- **Typescript Full-Stack**: Tipado estático estricto en frontend y backend para mayor seguridad y mantenibilidad.
+- **Seed Data Realista**: Script de poblado de base de datos con imágenes de alta calidad de Unsplash (hotlink-safe).
 
 ---
 
-## 🛠️ Stack Tecnológico
-
-### 🎨 **Frontend**
-
-```json
-{
-  "React": "19.1.1",
-  "Vite": "7.1.2",
-  "Tailwind CSS": "3.4.1",
-  "React Router": "7.8.2",
-  "Axios": "1.11.0",
-  "Context API": "Built-in"
-}
-```
-
-### ⚙️ **Backend**
-
-```json
-{
-  "Node.js": "18+",
-  "Express.js": "5.1.0",
-  "Database": "SQLite (Dev) / Postgres (Prod)",
-  "ORM": "TypeORM 0.3.x",
-  "JWT": "jsonwebtoken",
-  "bcrypt": "bcryptjs",
-  "CORS": "2.8.5"
-}
-```
-
-### 🛠️ **DevOps & Tools**
-
-```json
-{
-  "ESLint": "9.33.0",
-  "Prettier": "Auto-formatting",
-  "Git": "Version Control",
-  "npm": "Package Management",
-  "Postman": "API Testing"
-}
-```
-
----
-
-## ✨ Características
-
-### 🎯 **Funcionalidades Core**
-
-- ✅ **Autenticación JWT** - Login/registro seguro con tokens
-- ✅ **Carrito de Compras** - Persistente con gestión de stock
-- ✅ **Sistema de Productos** - CRUD completo con variantes
-- ✅ **Lista de Deseos** - Wishlist personalizada
-- ✅ **Sistema de Reseñas** - Calificaciones y comentarios
-- ✅ **Gestión de Stock** - Control dinámico por tallas/colores
-- ✅ **Cupones y Descuentos** - Sistema completo de promociones
-- ✅ **Búsqueda Avanzada** - Filtros y paginación
-- ✅ **Múltiples Imágenes** - Galería con zoom y miniaturas
-
-### 🎨 **Experiencia de Usuario**
-
-- ✅ **Responsive Design** - Optimizado para móvil, tablet y desktop
-- ✅ **UI Moderna** - Tailwind CSS con componentes reutilizables
-- ✅ **Loading States** - Feedback visual en todas las operaciones
-- ✅ **Error Handling** - Mensajes amigables y recuperación
-- ✅ **SEO Friendly** - Meta tags y estructura semántica
-- ✅ **Accesibilidad** - Soporte para lectores de pantalla
-
-### ⚡ **Rendimiento y Escalabilidad**
-
-- ✅ **Lazy Loading** - Carga diferida de imágenes
-- ✅ **API Caching** - Sistema de caché inteligente
-- ✅ **Image Optimization** - Compresión y formatos optimizados
-- ✅ **Code Splitting** - Carga modular de componentes
-- ✅ **Database Indexing** - Consultas optimizadas
-- ✅ **Rate Limiting** - Protección contra abuso
-
-### 🔄 En Desarrollo
-
-- Integración con pasarelas de pago
-- Sistema de notificaciones
-- Panel de administración
-- API de envío y tracking
-
-## 🛠️ Tecnologías Utilizadas
+## 🏗️ Stack Tecnológico
 
 ### Frontend
 
-- **React 19** - Framework moderno de JavaScript
-- **Vite** - Build tool ultrarrápido
-- **Tailwind CSS** - Framework de estilos utilitario
-- **React Router** - Navegación SPA
-- **Axios** - Cliente HTTP
-- **Context API** - Gestión de estado global
+| Tecnología       | Propósito                                   |
+| ---------------- | ------------------------------------------- |
+| **React 19**     | Biblioteca de UI moderna y eficiente        |
+| **Vite**         | Entorno de desarrollo ultrarrápido          |
+| **TypeScript**   | JavaScript con superpoderes de tipado       |
+| **Tailwind CSS** | Estilizado utility-first para diseño rápido |
+| **Axios**        | Cliente HTTP para comunicación con API      |
+| **React Router** | Enrutamiento del lado del cliente           |
 
 ### Backend
 
-- **Node.js** - Runtime de JavaScript
-- **Express.js** - Framework web minimalista
-- **SQLite** - Base de datos SQL ligera y rápida
-- **TypeORM** - ORM potente para TypeScript/JavaScript
-- **JWT** - Autenticación segura
-- **bcrypt** - Hashing de contraseñas
-- **CORS** - Control de acceso cross-origin
+| Tecnología  | Propósito                                       |
+| ----------- | ----------------------------------------------- |
+| **Node.js** | Entorno de ejecución de JavaScript              |
+| **Express** | Framework web minimalista y robusto             |
+| **SQLite**  | Base de datos relacional ligera (archivo local) |
+| **TypeORM** | ORM para mapeo de objetos y gestión de DB       |
+| **JWT**     | Autenticación segura basada en tokens           |
 
-### DevOps & Tools
+---
 
-- **ESLint** - Linting de código
-- **Prettier** - Formateo de código
-- **Git** - Control de versiones
-- **npm** - Gestión de paquetes
+## 🚀 Instalación y Despliegue Local
 
-## 📁 Estructura del Proyecto
-
-/
-├── backend/
-│ ├── controllers/ # Controladores de la API
-│ ├── middleware/ # Middlewares personalizados
-│ ├── models/ # Modelos de MongoDB
-│ ├── routes/ # Definición de rutas
-│ ├── uploads/ # Archivos subidos
-│ ├── .env.example # Variables de entorno
-│ └── server.js # Punto de entrada del servidor
-├── frontend/
-│ ├── public/ # Archivos estáticos
-│ ├── src/
-│ │ ├── components/ # Componentes reutilizables (UI, Layout)
-│ │ ├── context/ # Context API global (e.g., Theme)
-│ │ ├── features/ # Estructura basada en features (Auth, Cart, Products, Wishlist)
-│ │ │ ├── auth/ # Hooks, componentes y páginas de Auth
-│ │ │ ├── cart/ # Lógica y componentes de Carrito
-│ │ │ ├── products/# Lógica y componentes de Productos
-│ │ │ └── wishlist/# Lógica y componentes de Wishlist
-│ │ ├── hooks/ # Hooks globales
-│ │ ├── pages/ # Páginas principales (Home)
-│ │ ├── services/ # Servicios de API
-│ │ ├── utils/ # Utilidades y configuración
-│ │ ├── App.tsx # Componente principal (Rutas)
-│ │ └── main.tsx # Punto de entrada
-│ └── .env.example # Variables de entorno
-├── .gitignore # Archivos ignorados por Git
-├── LICENSE # Licencia MIT
-└── README.md # Este archivo
-
-````
-
-## 🚀 Instalación y Configuración
+Sigue estos pasos para levantar el proyecto en tu máquina local.
 
 ### Prerrequisitos
 
 - Node.js (v18 o superior)
-- SQLite (Incuido en el proyecto)
 - npm o yarn
+- Git
 
-### Backend Setup
+### 1. Clonar el Repositorio
+
+```bash
+git clone https://github.com/bmontes93/Sheinclon.git
+cd Sheinclon
+```
+
+### 2. Configurar el Backend
 
 ```bash
 cd backend
-npm install
-cp .env.example .env
-# Editar .env con tus configuraciones
-npm run seed  # Opcional: poblar base de datos
-npm run dev   # Iniciar servidor en modo desarrollo
-````
 
-### Frontend Setup
-
-```bash
-cd frontend
-npm install
-cp .env.example .env
-# Editar .env con tus configuraciones
-npm run dev   # Iniciar aplicación
-```
-
-### Variables de Entorno
-
-#### Backend (.env)
-
-```env
-PORT=5000
-NODE_ENV=development
-DB_TYPE=sqlite
-DB_DATABASE=database.sqlite
-JWT_SECRET=tu_jwt_secret_seguro
-JWT_EXPIRE=30d
-FRONTEND_URL=http://localhost:3000
-```
-
-#### Frontend (.env)
-
-```env
-VITE_API_URL=http://localhost:5000
-VITE_APP_NAME=SHEIN Clone
-VITE_APP_VERSION=1.0.0
-```
-
-## 📜 Scripts Disponibles
-
-### Backend
-
-```bash
-npm start      # Iniciar servidor en producción
-npm run dev    # Iniciar con nodemon (desarrollo)
-npm run seed   # Poblar base de datos con datos de prueba
-npm run seed:destroy  # Limpiar base de datos
-```
-
-### Frontend
-
-```bash
-npm run dev    # Iniciar servidor de desarrollo
-npm run build  # Construir para producción
-npm run preview # Vista previa de build
-npm run lint   # Ejecutar ESLint
-```
-
-## 🔌 API Endpoints
-
-### Productos
-
-- `GET /api/products` - Obtener todos los productos (con paginación)
-- `GET /api/products/:id` - Obtener producto específico
-- `GET /api/products/categories` - Obtener categorías
-- `GET /api/products/featured` - Productos destacados
-
-### Autenticación (Próximamente)
-
-- `POST /api/auth/login` - Iniciar sesión
-- `POST /api/auth/register` - Registrar usuario
-- `GET /api/auth/profile` - Obtener perfil de usuario
-
-### Carrito (Próximamente)
-
-- `GET /api/cart` - Obtener carrito
-- `POST /api/cart` - Agregar producto al carrito
-- `PUT /api/cart/:id` - Actualizar cantidad
-- `DELETE /api/cart/:id` - Eliminar producto
-
-## 🎨 Características de UI/UX
-
-- **Responsive Design**: Optimizado para móvil, tablet y desktop
-- **Dark/Light Mode**: Soporte para temas (planeado)
-- **Loading States**: Indicadores de carga en todas las operaciones
-- **Error Handling**: Mensajes de error amigables
-- **Smooth Animations**: Transiciones suaves con CSS
-- **Accessibility**: Soporte para lectores de pantalla
-
-## 🔒 Seguridad
-
-- **JWT Authentication**: Tokens seguros para autenticación
-- **Password Hashing**: bcrypt para encriptación de contraseñas
-- **Input Validation**: Validación de datos en frontend y backend
-- **CORS**: Control de acceso cross-origin
-- **Rate Limiting**: Protección contra ataques de fuerza bruta
-- **XSS Protection**: Sanitización de inputs
-
-## 📊 Rendimiento
-
-- **Code Splitting**: Carga diferida de componentes
-- **Image Optimization**: Compresión y lazy loading
-- **Caching**: Estrategias de cache implementadas
-- **Bundle Analysis**: Optimización del tamaño del bundle
-- **SEO Friendly**: Meta tags y estructura semántica
-
-## 🧪 Testing
-
-```bash
-# Backend tests
-cd backend
-npm test
-
-# Frontend tests
-cd frontend
-npm test
-```
-
-## 🚀 Despliegue
-
-### Backend (Railway, Heroku, etc.)
-
-```bash
-npm run build
-npm start
-```
-
-### Frontend (Vercel, Netlify, etc.)
-
-```bash
-npm run build
-# Desplegar carpeta 'dist'
-```
-
-## 🤝 Contribución
-
-¡Tu contribución es bienvenida! Por favor lee nuestra [Guía de Contribución](CONTRIBUTING.md) para detalles sobre:
-
-- 📋 **Proceso de desarrollo**
-- 🐛 **Reportar bugs**
-- 💡 **Sugerir features**
-- 🔄 **Pull requests**
-- 🧪 **Testing**
-- 📚 **Documentación**
-
-### Quick Start para Contribuidores
-
-```bash
-# 1. Fork y clone
-git clone https://github.com/bmontes93/shein-clone.git
-
-# 2. Instalar dependencias
+# Instalar dependencias
 npm install
 
-# 3. Configurar entorno
-cp .env.example .env
+# Configurar variables de entorno (Crear archivo .env basado en .env.example)
+# Asegúrate de definir JWT_SECRET y PORT
 
-# 4. Ejecutar proyecto
+# Poblar la base de datos (Seed)
+# Esto creará el archivo database.sqlite y cargará productos de prueba
+npm run seed
+
+# Iniciar servidor en modo desarrollo
 npm run dev
-
-# 5. Crear rama
-git checkout -b feature/nueva-funcionalidad
 ```
 
-## 📝 Licencia
+> El backend correrá en `http://localhost:5000`
 
-Este proyecto está bajo la **Licencia MIT** - ver el archivo [LICENSE](LICENSE) para más detalles.
+### 3. Configurar el Frontend
 
-```text
-MIT License - Copyright (c) 2024 Bryan Montes
+```bash
+# En una nueva terminal, navega a la carpeta frontend
+cd frontend
 
-Permiso para usar, copiar, modificar y distribuir este software...
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm run dev
 ```
 
-## 👨‍💻 Autor
-
-**Bryan Montes**
-
-- 🎯 **Rol**: Full-Stack Developer
-- 🌐 **Portfolio**:
-- 📧 **Email**: [bmontesr930620@gmail.com](mailto:bmontesr930620@gmail.com)
-- 🐙 **GitHub**: [bmontes93](https://github.com/bmontes93)
-
-### 🚀 Tecnologías que Domino
-
-- **Frontend**: React, Next.js, Vue.js, TypeScript
-- **Backend**: Node.js, Express, Python, FastAPI
-- **Database**: MongoDB, PostgreSQL, MySQL
-- **Cloud**: AWS, Vercel, Railway, Docker
-- **Tools**: Git, CI/CD, Testing, DevOps
-
-## 🙏 Agradecimientos
-
-### 🎯 **Tecnologías Core**
-
-- **[React 19](https://reactjs.org/)** - Framework web moderno
-- **[Express.js](https://expressjs.com/)** - Framework backend minimalista
-- **[TypeORM](https://typeorm.io/)** - ORM TypeScript
-- **[SQLite](https://www.sqlite.org/index.html)** - Base de datos SQL
-- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utilitario
-- **[Vite](https://vitejs.dev/)** - Build tool ultrarrápido
-
-### 🛠️ **Herramientas de Desarrollo**
-
-- **[ESLint](https://eslint.org/)** - Linting y calidad de código
-- **[Prettier](https://prettier.io/)** - Formateo automático
-- **[GitHub Actions](https://github.com/features/actions)** - CI/CD
-- **[Dependabot](https://dependabot.com/)** - Actualizaciones automáticas
-
-### 🎨 **Inspiración y Diseño**
-
-- **[SHEIN](https://us.shein.com/)** - Inspiración de UX/UI
-- **[Material Design](https://material.io/)** - Principios de diseño
-- **[Open Source Community](https://opensource.org/)** - Comunidad colaborativa
-
-### 👥 **Contribuidores**
-
-¡Gracias a todos los contribuidores que hacen este proyecto mejor!
-
-<a href="https://github.com/tu-usuario/shein-clone/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=tu-usuario/shein-clone" />
-</a>
+> El frontend correrá en `http://localhost:5173`
 
 ---
 
-## 📞 Contacto y Soporte
+## 📂 Estructura del Proyecto
 
-### 💬 **¿Necesitas Ayuda?**
+```
+Sheinclon/
+├── backend/
+│   ├── src/
+│   │   ├── config/         # Configuración de DB (TypeORM)
+│   │   ├── controllers/    # Lógica de controladores
+│   │   ├── entities/       # Entidades TypeORM (User, Product, etc.)
+│   │   ├── routes/         # Definición de endpoints API
+│   │   └── seeder.ts       # Script de carga de datos iniciales
+│   └── package.json
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/     # UI Reutilizable (OptimizedImage, etc.)
+│   │   ├── features/       # Módulos (Auth, Cart, Products)
+│   │   ├── pages/          # Páginas principales (HomePage)
+│   │   └── utils/          # Configuración y helpers
+│   └── package.json
+└── README.md
+```
 
-- 📧 **Email**: [bmontesr930620@gmail.com](mailto:bmontesr930620@gmail.com)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/bmontes93/shein-clone/discussions)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/bmontes93/shein-clone/issues)
-- 📖 **Wiki**: [Project Wiki](https://github.com/bmontes93/shein-clone/wiki)
+---
 
-### 🌟 **Feedback**
+## 🤝 Contribución
 
-¡Tu opinión es importante! Ayúdanos a mejorar creando:
+¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar este proyecto:
 
-- ⭐ **Issues** para bugs o mejoras
-- 💡 **Discussions** para preguntas generales
-- 📝 **Pull Requests** para contribuciones de código
+1.  Haz un Fork del proyecto.
+2.  Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`).
+3.  Haz Commit de tus cambios (`git commit -m 'Add some AmazingFeature'`).
+4.  Haz Push a la rama (`git push origin feature/AmazingFeature`).
+5.  Abre un Pull Request.
+
+---
+
+## 📄 Licencia
+
+Distribuido bajo la licencia MIT. Ver `LICENSE` para más información.
 
 ---
 
 <div align="center">
 
-## 🎉 **¡Gracias por tu interés en SHEIN Clone!**
-
-**Este proyecto demuestra habilidades avanzadas en desarrollo full-stack moderno**
-
-### 📊 **Estadísticas del Proyecto**
-
-![GitHub stars](https://img.shields.io/github/stars/bmontes93/shein-clone?style=social)
-![GitHub forks](https://img.shields.io/github/forks/bmontes93/shein-clone?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/bmontes93/shein-clone?style=social)
-
-### 🚀 **¡Haz que tu portafolio destaque!**
-
-⭐ **Si te gusta este proyecto, dale una estrella y compártelo**
-
----
-
-**Desarrollado con ❤️ por Bryan Montes**
-
-_Última actualización: Diciembre 2025_
+**Desarrollado con ❤️ por [Bryan Montes](https://github.com/bmontes93)**
 
 </div>
